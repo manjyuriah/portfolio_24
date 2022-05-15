@@ -10,6 +10,10 @@ function Projects() {
             <li>
               <div>01</div>
               <div className="line">룰렛게임 (PC/Mobile)</div>
+              <div className="preview">
+                <img src={require("../assets/pc.png")} alt="pc"/>
+                <img src={require("../assets/mobile.png")} alt="mobile"/>
+              </div>
             </li>
             <li>
               <div>02</div>

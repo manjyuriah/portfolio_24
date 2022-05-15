@@ -1,5 +1,5 @@
 import './App.css';
-import Contact from './components/Contact';
+import Skills from './components/Skills';
 import Footer from './components/Footer';
 import Main from './components/Main';
 import Projects from './components/Projects';
@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       <Main />
+      <Skills />
       <Projects />
-      <Contact />
       <Footer />
     </div>
   );
