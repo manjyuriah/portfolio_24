@@ -1,0 +1,22 @@
+ul,ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.contact-container{
+    width: 100%;
+    height: 730px;
+    background:#F6EEE3;
+    background:linear-gradient(#EAE7E4,#E9E9E9);
+}
+.contact-box{
+    padding: 0 20px;
+    .title{
+        width: 100%;
+        height: 50px;
+        font-size: 40px;
+        padding-top: 30px;
+        font-weight: 900;
+        margin-bottom: 50px;
+    }
+}
