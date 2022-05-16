@@ -53,17 +53,21 @@ ul,ol{
     }
     .social{
         position: fixed;
-        display: flex;
         bottom: 20px;
         right: 10px;
-        >li{
-            width: 36px;
-            height: 36px;
-            margin-right: 10px;
-            cursor: pointer;
-            >img{
+        >ul {
+            display: flex;
+            z-index: 10;
+            > li{
                 width: 36px;
                 height: 36px;
+                margin-right: 10px;
+                cursor: pointer;
+                img{
+                    width: 36px;
+                    height: 36px;
+                    cursor: pointer;
+                }
             }
         }
     }
