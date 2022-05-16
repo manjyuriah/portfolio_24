@@ -1,6 +1,5 @@
 import './Main.scss';
 import KakaoQR from './KakaoQR';
-import {MdClose} from 'react-icons/md'
 import React, {useState} from 'react';
 
 function Main() {
