@@ -19,12 +19,24 @@ ul,ol{
         margin-bottom: 50px;
     }
     .list{
-        text-align: left;
-        font-size: 18px;
-        font-weight: 700;
-        >li{
+        li{
+            position: relative;
+        }
+        div:first-child{
+            text-align: left;
+            font-size: 18px;
+            font-weight: 700;
             height: 66px;
             line-height: 66px;
+            width: 150px;
+        }
+        .explain{
+            position: absolute;
+            font-weight: normal;
+            font-size: 14px;
+            top:0;
+            line-height: 66px;
+            text-indent: 150px;
         }
     }
 }
