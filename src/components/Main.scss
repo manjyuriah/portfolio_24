@@ -17,6 +17,7 @@ ul,ol{
     right: 50px;
     display: flex;
     justify-content: right;
+    z-index: 10;
     >li{
         margin-right: 40px;
         cursor: pointer;
