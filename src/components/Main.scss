@@ -3,12 +3,63 @@ ul,ol{
     margin: 0;
     padding: 0;
 }
+//~400px
+@media(max-width:400px){
+    .main-container{
+        width: 100%;
+        height: 700px;
+        background-image: linear-gradient(to right top, #f6e3e3, #ffe4dd, #ffe6d5, #ffeacc, #fff0c6);
+    }
+    .nav{
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        top: 20px;
+        right: 0px;
+        display: flex;
+        justify-content: right;
+        z-index: 10;
+        >li{
+            margin-right: 40px;
+            cursor: pointer;
+            font-weight: 100;
+            &:hover{
+                font-weight: 400;
+            }
+            &:not(:last-child):after{
+                content: "|";
+                padding-left: 40px;
+            }
+        }
+    }
+    .information{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        font-weight: normal;
+        font-size: 14px;
+    }
+    .main-box{
+        height: 650px;
+        .email{
+            margin-top: 50px;
+            text-align: left;
+        }
+    }
+}
+
+//400px~
+@media(min-width:400px){
 .main-container{
     width: 100%;
     height: 932px;
     // background: radial-gradient(circle, rgba(255,215,198,1) 0%, rgba(246,238,227,1) 35%); 
     background-image: linear-gradient(to right top, #f6e3e3, #ffe4dd, #ffe6d5, #ffeacc, #fff0c6);
-    font-weight: 600;
+    // font-weight: 600;
+    font-weight: 100 !important;
 }
 .nav{
     width: 100%;
@@ -22,9 +73,9 @@ ul,ol{
     >li{
         margin-right: 40px;
         cursor: pointer;
-        font-weight: 500;
+        font-weight: 100;
         &:hover{
-            font-weight: 900;
+            font-weight: 400;
         }
         &:not(:last-child):after{
             content: "|";
@@ -32,12 +83,20 @@ ul,ol{
         }
     }
 }
+.email{
+    text-align: left;
+    margin-top: 150px;
+    letter-spacing:1.2px;
+    font-weight: 100;
+    font-size: 16px;
+}
+}
 .main-box{
     padding: 0 20px;
     .hello{
         padding-top: 100px;
         text-align: left;
-        font-weight: 700;
+        font-weight: 400;
         font-size: 30px;
         font-style: italic;
     }
@@ -46,13 +105,17 @@ ul,ol{
         text-align: left;
         font-size: 22px;
     }
-    .email{
-        text-align: left;
-        margin-top: 35%;
-        letter-spacing:1.2px;
-        font-weight: 700;
-        font-size: 20px;
+    .information{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin-top: 200px;
+        font-weight: normal;
     }
+
     .social{
         position: fixed;
         bottom: 20px;
@@ -74,7 +137,6 @@ ul,ol{
         }
     }
     .strong{
-        font-weight: 900;
-        font-size: 26px;
+        font-weight: 400;
     }
 }

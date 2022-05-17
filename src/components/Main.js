@@ -1,6 +1,8 @@
 import './Main.scss';
 import KakaoQR from './KakaoQR';
 import React, { useEffect, useState } from 'react';
+import {FaBuilding} from 'react-icons/fa';
+import {BsFillPencilFill} from 'react-icons/bs';
 
 function Main(props) {
 
@@ -46,7 +48,11 @@ function Main(props) {
             <div className="intro">
               My Name is <span className="strong">Kim Min Joo.</span> I'm <span className="strong">Front-end Developer</span> based in Seoul.
             </div>
-            <div className="email">Contact Me : juju970128@naver.com</div>
+            <div className='information'>
+              <div><FaBuilding size="24"/> 파인드 커넥트 재직 (2021.09~)</div>
+              <div><BsFillPencilFill size="24" /> 그린컴퓨터 학원 프론트엔드 개발자 교육과정 이수</div>
+            </div>
+            <div className="email">Contact Me : <span className="strong">juju970128@naver.com</span></div>
                 {
                   openkakao === true
                   ?<KakaoQR />

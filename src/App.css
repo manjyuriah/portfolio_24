@@ -1,11 +1,13 @@
-@font-face {
+/* @font-face {
   font-family: 'helvetica';
   src: url('./assets/HelveticaNeue-Regular.ttf') format('truetype');
-}
+} */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500&display=swap');
 .App {
   text-align: center;
   color: #2e2e2e;
-  font-family: 'helvetica';
+  /* font-family: 'helvetica'; */
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .App-header {

@@ -3,112 +3,241 @@ ul,ol{
     margin: 0;
     padding: 0;
 }
-.projects-container{
-    width: 100%;
-    height: 1080px;
-    // background:linear-gradient(#F7DCDB,#EAE7E4);
-    // background-color: #EAE7E4;
-    background-image: linear-gradient(to bottom, #fde4dc, #fae4e3, #f5e5e8, #f0e7eb, #ebe8eb);
-}
-.projects-box{
-    padding: 0 20px;
-    position: relative;
-    .title{
+//1346px~
+@media(min-width:1346px){
+    .projects-container{
         width: 100%;
-        height: 50px;
-        font-size: 40px;
-        padding-top: 30px;
-        font-weight: 900;
-        margin-bottom: 50px;
+        height: 1080px;
+        // background:linear-gradient(#F7DCDB,#EAE7E4);
+        // background-color: #EAE7E4;
+        background-image: linear-gradient(to bottom, #fde4dc, #fae4e3, #f5e5e8, #f0e7eb, #ebe8eb);
     }
-    .list{
+    .projects-box{
+        padding: 0 20px;
+        position: relative;
+        .title{
+            width: 100%;
+            height: 50px;
+            font-size: 40px;
+            padding-top: 30px;
+            font-weight: 400;
+            margin-bottom: 50px;
+        }
+        .list{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 800px;
+            >li{
+                width: 40%;
+                border-bottom: 1px solid #2e2e2e;
+                text-align: right;
+                padding-right: 30px;
+                padding-bottom: 8px;
+                .line{
+                    cursor: pointer;
+                }
+                &:hover .line{
+                    font-weight: 500;
+                }
+                >.left div:first-child{
+                    text-align: left;
+                    font-size: 40px;
+                    font-weight: lighter;
+                }
+            }
+        }
+    }
+    .preview{
+        width: 850px;
+        height: 550px;
+        position: absolute;
+        top: 20%;
+        right: 7%;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 800px;
-        >li{
-            width: 40%;
-            border-bottom: 1px solid #2e2e2e;
-            text-align: right;
-            padding-right: 30px;
-            padding-bottom: 8px;
-            .line{
+        justify-content: space-around;
+        >img{
+            object-fit: contain;
+            width: 500px;
+            height: 400px;
+            position: relative;
+            top: 0;
+            &:first-child{
+                width: 520px;
+            }
+            &:nth-child(2){
+                width:180px;
+            }
+        }
+        .explain{
+            position: absolute;
+            width: 100%;
+            bottom: 65px;
+            text-align: center;
+        }
+        .hashtag{
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+            color: #535353;
+            font-size: 14px;
+        }
+        .pc_preview{
+            position: absolute;
+            width: 420px;
+            height: 234px;
+            top: 7%;
+            right: 40%;
+            overflow: hidden;
+            background-color: #EAE7E4;
+            font-weight: bold;
+            line-height: 234px;
+            &:after {
+                content : " 404 준비중입니다 🤐";
+              }
+            >a>img{
+                height: 234px;
+                object-fit: cover;
                 cursor: pointer;
             }
-            &:hover .line{
-                font-weight: 700;
-            }
-            >.left div:first-child{
-                text-align: left;
-                font-size: 40px;
-                font-weight: 400;
+        }
+        .m_preview{
+            position: absolute;
+            width:160px;
+            height: 286px;
+            right: 48px;
+            top: 57px;
+            overflow: hidden;
+            background-color: #fff;
+            font-weight: bold;
+            line-height: 286px;
+            &:after {
+                content : " 404 준비중입니다 🚧";
+              }
+            >img{
+                width:160px;
+                object-fit: cover;
+                cursor: pointer;
             }
         }
     }
 }
-.preview{
-    width: 850px;
-    height: 550px;
-    position: absolute;
-    top: 20%;
-    right: 7%;
-    display: flex;
-    justify-content: space-around;
-    >img{
-        object-fit: contain;
-        width: 500px;
-        height: 400px;
-        position: relative;
-        top: 0;
-        &:first-child{
-            width: 520px;
-        }
-        &:nth-child(2){
-            width:180px;
-        }
-    }
-    .explain{
-        position: absolute;
+//400px~1346px
+@media(max-width:1346px){
+
+}
+//~400px
+@media(max-width:400px){
+    .projects-container{
         width: 100%;
-        bottom: 0;
-        text-align: center;
+        height: 1080px;
+        background-image: linear-gradient(to bottom, #fde4dc, #fae4e3, #f5e5e8, #f0e7eb, #ebe8eb);
     }
-    .pc_preview{
-        position: absolute;
-        width: 420px;
-        height: 234px;
-        top: 7%;
-        right: 40%;
-        overflow: hidden;
-        background-color: #EAE7E4;
-        font-weight: bold;
-        line-height: 234px;
-        &:after {
-            content : " 404 준비중입니다 🤐";
-          }
-        >a>img{
-            height: 234px;
-            object-fit: cover;
-            cursor: pointer;
+    .projects-box{
+        padding: 0 20px;
+        position: relative;
+        .title{
+            width: 100%;
+            height: 50px;
+            font-size: 30px;
+            padding-top: 30px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+        .list{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 3000px;
+            >li{
+                width:100%;
+                height: 350px;
+                >.left div:first-child{
+                    text-align: left;
+                    font-size: 22px;
+                    font-weight: lighter;
+                }
+            }
+        }
+        .line{
+            position: absolute;
+            top: 5px;
+            text-indent: 50px;
         }
     }
-    .m_preview{
+    .preview{
+        width: 90%;
+        height: 330px;
         position: absolute;
-        width:160px;
-        height: 286px;
-        right: 48px;
-        top: 57px;
-        overflow: hidden;
-        background-color: #fff;
-        font-weight: bold;
-        line-height: 286px;
-        &:after {
-            content : " 404 준비중입니다 🚧";
-          }
+        // top: 100px;
+        display: flex;
+        justify-content: space-between;
         >img{
-            width:160px;
-            object-fit: cover;
-            cursor: pointer;
+            object-fit: contain;
+            position: relative;
+            height: 248px;
+            top: 0;
+            &:first-child{
+                width: 240px;
+            }
+            &:nth-child(2){
+                width:90px;
+            }
+        }
+        .explain{
+            position: absolute;
+            width: 100%;
+            bottom: 20px;
+            font-size: 14px;
+            text-align: center;
+        }
+        .hashtag{
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+            color: #535353;
+            font-size: 12px;
+        }
+        .pc_preview{
+            position: absolute;
+            width: 190px;
+            height: 110px;
+            left: 24px;
+            top: 50px;
+            object-fit: contain;
+            overflow: hidden;
+            background-color: #EAE7E4;
+            font-weight: bold;
+            line-height: 110px;
+            &:after {
+                content : " 404 준비중 🤐";
+              }
+            >a>img{
+                height: 110px;
+                object-fit: cover;
+            }
+        }
+        .m_preview{
+            position: absolute;
+            width:80px;
+            height: 144px;
+            right: 5px;
+            top: 53px;
+            overflow: hidden;
+            background-color: #fff;
+            font-weight: bold;
+            line-height: 144px;
+            &:after {
+                content : " 404 준비중 🚧";
+              }
+            >img{
+                width:80px;
+                top: 0;
+                position: absolute;
+                object-fit: cover;
+            }
         }
     }
 }
