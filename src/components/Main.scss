@@ -5,8 +5,9 @@ ul,ol{
 }
 .main-container{
     width: 100%;
-    height: 920px;
-    background:radial-gradient(ellipse,#F99DBF,#F8B1C8,#F7DADA,#F6EEE3);
+    height: 932px;
+    // background: radial-gradient(circle, rgba(255,215,198,1) 0%, rgba(246,238,227,1) 35%); 
+    background-image: linear-gradient(to right top, #f6e3e3, #ffe4dd, #ffe6d5, #ffeacc, #fff0c6);
     font-weight: 600;
 }
 .nav{

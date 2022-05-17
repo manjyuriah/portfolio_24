@@ -5,8 +5,9 @@ ul,ol{
 }
 .skills-container{
     width: 100%;
-    height: 920px;
-    background:linear-gradient(#F7DCDB,#EAE7E4);
+    height: 927px;
+    // background:linear-gradient(#F6EEE3,#EAE7E4);
+    background-image: linear-gradient(to right, #f6e3e3, #fae3e0, #fde4dc, #ffe5d8, #ffe6d4);
 }
 .skills-box{
     padding: 0 20px;

@@ -25,6 +25,7 @@ function App() {
     return () => {
       window.removeEventListener('scroll', handleFollow); // addEventListener 함수를 삭제
     }
+
   })
 
   return (
