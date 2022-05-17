@@ -55,7 +55,6 @@ ul,ol{
     justify-content: space-around;
     >img{
         object-fit: contain;
-        cursor: pointer;
         &:first-child{
             width: 520px;
         }
@@ -68,5 +67,43 @@ ul,ol{
         width: 100%;
         bottom: 0;
         text-align: center;
+    }
+    .pc_preview{
+        position: absolute;
+        width: 420px;
+        height: 234px;
+        left: 90px;
+        top: 190px;
+        overflow: hidden;
+        background-color: #EAE7E4;
+        font-weight: bold;
+        line-height: 234px;
+        &:after {
+            content : " 404 준비중입니다 🤐";
+          }
+        >a>img{
+            height: 234px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+    }
+    .m_preview{
+        position: absolute;
+        width:160px;
+        height: 286px;
+        right: 50px;
+        top: 206px;
+        overflow: hidden;
+        background-color: #fff;
+        font-weight: bold;
+        line-height: 286px;
+        &:after {
+            content : " 404 준비중입니다 🚧";
+          }
+        >img{
+            width:160px;
+            object-fit: cover;
+            cursor: pointer;
+        }
     }
 }

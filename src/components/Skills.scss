@@ -16,7 +16,7 @@ ul,ol{
         font-size: 40px;
         padding-top: 30px;
         font-weight: 900;
-        margin-bottom: 50px;
+        margin-bottom: 35px;
     }
     .list{
         li{
@@ -29,14 +29,20 @@ ul,ol{
             height: 66px;
             line-height: 66px;
             width: 150px;
+            border-right: 1px solid #acacac;
         }
         .explain{
             position: absolute;
             font-weight: normal;
             font-size: 14px;
             top:0;
-            line-height: 66px;
-            text-indent: 150px;
+            line-height: 55px;
+            text-indent: 180px;
+            // &::before {
+            //     content : " | ";
+            //     font-size: 26px;
+            //     margin-right: 10px;
+            //   }
         }
     }
 }

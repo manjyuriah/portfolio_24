@@ -12,7 +12,17 @@ function Projects() {
     '외부에서 제작된 디자인 및 퍼블리싱을 기획서에 맞춰 전면 수정 및 재 구성하는 형태로 제작',
     '메인페이지1개, 서브페이지3개로 이루어진 팀 프로젝트. Q&A는 입력 후 백엔드로 전달되어 자동으로 JSON이 파싱되도록 제작',
   ])
+
   const [number,setNumber]=useState(0)
+  function mobile1(){
+    window.open('http://juju970128.dothome.co.kr/portfolio/event/mindex.html', '', 'width=414, height=896','_blank')
+  }
+  function mobile2(){
+    window.open('http://juju970128.dothome.co.kr/middle/index.html', '', 'width=414, height=896','_blank')
+  }
+  function mobile3(){
+    window.open('http://juju970128.dothome.co.kr/test1/final_mshop/index.html', '', 'width=414, height=896','_blank')
+  }
   return (
       <>
       <div className="projects-container">
@@ -22,6 +32,77 @@ function Projects() {
           <div className="preview">
                 <img src={require("../assets/pc.png")} alt="pc"/>
                 <img src={require("../assets/mobile.png")} alt="mobile"/>
+                <div className="pc_preview">
+                  {/* 포폴 웹페이지 */}
+                  {
+                  number === 0
+                  ?<a href="http://juju970128.dothome.co.kr/portfolio/event/index.html" target="_blank">
+                    <img src={require(`../assets/thum${number}.png`)} alt="roullete" />
+                  </a>
+                  :null
+                  }
+                  {
+                  number === 1
+                  ?<a href="http://juju970128.dothome.co.kr/portfolio/event/picture.html" target="_blank">
+                    <img src={require(`../assets/thum${number}.png`)} alt="puzzle"/>
+                  </a>
+                  :null
+                  }
+                  {
+                  number === 2
+                  ?<a href="http://juju970128.dothome.co.kr/green504c/" target="_blank">
+                    <img src={require(`../assets/thum${number}.png`)} alt="ocn"/>
+                  </a>
+                  :null
+                  }
+                  {
+                  number === 3
+                  ?<a href="http://juju970128.dothome.co.kr/public_html/index.html" target="_blank">
+                    <img src={require(`../assets/thum_m${number}.png`)} alt="hellopet"/>
+                  </a>
+                  :null
+                  }
+                  {
+                  number === 4
+                  ?<a href="http://juju970128.dothome.co.kr/portfolio/shop/admin/" target="_blank">
+                    <img src={require(`../assets/thum${number}.png`)} alt="shopadmin"/>
+                  </a>
+                  :null
+                  }
+                  {
+                  number === 5
+                  ?<a href="http://juju970128.dothome.co.kr/portfolio/shop/index.html" target="_blank">
+                    <img src={require(`../assets/thum${number}.png`)} alt="shopmain"/>
+                  </a>
+                  :null
+                  }
+                  {
+                  number === 7
+                  ?<a href="http://juju970128.dothome.co.kr/light_test/" target="_blank">
+                    <img src={require(`../assets/thum${number}.png`)} alt="lights"/>
+                  </a>
+                  :null
+                  }
+                </div>
+                {/* 포폴 모바일 */}
+                <div className='m_preview'>
+                  {
+                  number === 0
+                  ?<img src={require(`../assets/thum_m${number}.png`)} alt="roullete" onClick={mobile1}/>
+                  :null
+                  }
+                  {
+                  number === 3
+                  ?<img src={require(`../assets/thum_m${number}.png`)} alt="hellopet" onClick={mobile2}/>
+                  :null
+                  }
+                  {
+                  number === 6
+                  ?<img src={require(`../assets/thum_m${number}.png`)} alt="minimal" onClick={mobile3}/>
+                  :null
+                  }
+                </div>
+              
                 <div className="explain">{explain[number]}</div>
           </div>
           {/* 포폴페이지 목록 및 설명 */}

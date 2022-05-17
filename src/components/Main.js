@@ -46,7 +46,7 @@ function Main(props) {
             <div className="intro">
               My Name is <span className="strong">Kim Min Joo.</span> I'm <span className="strong">Front-end Developer</span> based in Seoul.
             </div>
-            <div className="email">juju970128@naver.com</div>
+            <div className="email">Contact Me : juju970128@naver.com</div>
                 {
                   openkakao === true
                   ?<KakaoQR />
