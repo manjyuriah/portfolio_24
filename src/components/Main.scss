@@ -21,14 +21,13 @@ ul,ol{
         z-index: 10;
         >li{
             margin-right: 40px;
-            cursor: pointer;
             font-weight: 100;
             &:hover{
                 font-weight: 400;
             }
             &:not(:last-child):after{
                 content: "|";
-                padding-left: 40px;
+                padding-left: 30px;
             }
         }
     }
@@ -85,7 +84,7 @@ ul,ol{
 }
 .email{
     text-align: left;
-    margin-top: 150px;
+    margin-top: 400px;
     letter-spacing:1.2px;
     font-weight: 100;
     font-size: 16px;
@@ -112,7 +111,7 @@ ul,ol{
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-around;
-        margin-top: 200px;
+        margin-top: 100px;
         font-weight: normal;
     }
 

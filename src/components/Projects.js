@@ -68,7 +68,7 @@ function Projects() {
                   {
                   number === 3
                   ?<a href="http://juju970128.dothome.co.kr/public_html/index.html" target="_blank">
-                    <img src={require(`../assets/thum_m${number}.png`)} alt="hellopet"/>
+                    <img src={require(`../assets/thum${number}.PNG`)} alt="hellopet"/>
                   </a>
                   :null
                   }
