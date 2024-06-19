@@ -49,7 +49,8 @@ function Main(props) {
               My Name is <span className="strong">Kim Min Joo.</span> I'm <span className="strong">Front-end Developer</span> based in Seoul.
             </div>
             <div className='information'>
-              <div><FaBuilding size="24"/> 파인드 커넥트 재직 (2021.09~)</div>
+              <div><FaBuilding size="24"/> 파인드 커넥트 (2021.09~2022.08)</div>
+              <div><FaBuilding size="24"/> 아이엠에스 모빌리티 (2022.10~2024.06)</div>
               <div><BsFillPencilFill size="24" /> 그린컴퓨터 학원 프론트엔드 개발자 교육과정 이수</div>
             </div>
             <div className="email">Contact Me : <span className="strong">juju970128@naver.com</span></div>
